@@ -91,6 +91,16 @@ public ArrayList<Edge> getMigliori(){
 		return migliori;
 	}
 ```
+Consigli sulle query:
+-se c'è scritto "almeno" per calcolare gli archi = poni tutti gli attributi uguali e metti i 2 nodi diversi
+-ricorda distinct/distinctrow
+-se devi verificare dati 2 nodi, quali elementi hanno in comune o metti un count nel select e nel where nodo.elemento = nodo.elemento2 oppure usi la idmap e 
+aggiungi una lista agli attributi del nodo.
+
+
+SECONDA PARTE
+
+
 RICORSIONE
 È importante inizializzare best all’inizio di trova percorso e i vari parametri
 Impostare la condizione di terminazione
