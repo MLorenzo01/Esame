@@ -96,6 +96,7 @@ Consigli sulle query:
 -ricorda distinct/distinctrow
 -se devi verificare dati 2 nodi, quali elementi hanno in comune o metti un count nel select e nel where nodo.elemento = nodo.elemento2 oppure usi la idmap e 
 aggiungi una lista agli attributi del nodo.
+-somma gli stipendi quando si parla di stipendi annuali
 
 
 SECONDA PARTE
@@ -253,4 +254,23 @@ public class Event implements Comparable<Event> {
 }
 ```
 
-Una cosa importimportante con i set è che è possibile fare l'intersezione con retainAll
+Una cosa importante con i set è che è possibile fare l'intersezione con retainAll
+
+FXML 
+```java
+
+``try {
+    		int anno = Integer.parseInt(txtYear.getText());
+    		if(anno > 2020 || anno < 1870) {
+    			txtResult.setText("Inserire un anno tra il 1871 e il 2019");
+    			return;
+    		}
+    		int salary = Integer.parseInt(txtSalary.getText());
+    		btnConnesse.setDisable(false);
+    		btnDreamTeam.setDisable(false);
+    		btnGradoMassimo.setDisable(false);
+    		
+    		model.creaGrafo(anno, salary);
+    	}catch(NumberFormatException e){
+    		txtResult.setText("Anno inserito in modo scorretto");
+    	}`
