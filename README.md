@@ -101,6 +101,7 @@ Consigli sulle query:
 -ricorda distinct/distinctrow
 -se devi verificare dati 2 nodi, quali elementi hanno in comune o metti un count nel select e nel where nodo.elemento = nodo.elemento2 oppure usi la idmap e 
 aggiungi una lista agli attributi del nodo.
+-per contare il numero di elementi collegati ai nodi, se ne devi confrontare 2, usa le tabelle filtrate nel where e poi confronti nella query principale
 
 METODO PER ORDINARE GLI ARCHI IN BASE AL PESO
 
