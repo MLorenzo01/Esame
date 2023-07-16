@@ -1,7 +1,6 @@
 # Esame
 
-https://github.com/TdP-esami/2023-05-23-simulazione/tree/master
-
+https://github.com/TdP-esami/2023-05-30-simulazione/tree/soluzione
 PRIMA PARTE
 
 ```java
