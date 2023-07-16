@@ -218,6 +218,8 @@ private void processEvent(Event e) {
 			
 			break;
 		}
+		case default:
+			break;
 	}
 ```
 
