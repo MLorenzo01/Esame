@@ -1,6 +1,10 @@
 # Esame
 
 https://github.com/TdP-esami/2023-05-30-simulazione/tree/soluzione
+
+CONSIGLI DB SALES
+ci sono dei venditori che durante l'anno non hanno venduto nulla
+Bisogna usare distinct in s1.productCode, perché un venditore vende un prodotto più volte nell'anno
 PRIMA PARTE
 
 ```java
