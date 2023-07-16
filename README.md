@@ -98,8 +98,22 @@ Consigli sulle query:
 -ricorda distinct/distinctrow
 -se devi verificare dati 2 nodi, quali elementi hanno in comune o metti un count nel select e nel where nodo.elemento = nodo.elemento2 oppure usi la idmap e 
 aggiungi una lista agli attributi del nodo.
--somma gli stipendi quando si parla di stipendi annuali
 
+METODO PER ORDINARE GLI ARCHI IN BASE AL PESO
+
+```java
+List<DefaultWeightedEdge> edgeList = new ArrayList<>(graph.edgeSet());
+
+edgeList.sort(Comparator.comparingDouble(graph::getEdgeWeight));
+
+for (DefaultWeightedEdge edge : edgeList) {
+    double weight = graph.getEdgeWeight(edge);
+    String sourceVertex = graph.getEdgeSource(edge);
+    String targetVertex = graph.getEdgeTarget(edge);
+
+    System.out.println("Arco: " + sourceVertex + " -> " + targetVertex + ", Peso: " + weight);
+}
+```
 
 SECONDA PARTE
 
